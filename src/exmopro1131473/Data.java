@@ -1,17 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package exmopro1131473;
 
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Aluno
- */
 public class Data {
     private static int ano = GregorianCalendar.getInstance().get(GregorianCalendar.YEAR);
     private static int dia = GregorianCalendar.getInstance().get(GregorianCalendar.DATE);
