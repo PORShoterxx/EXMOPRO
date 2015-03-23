@@ -6,19 +6,25 @@ import java.util.Locale;
 import javax.swing.JOptionPane;
 
 public class Data {
-    private static int ano = GregorianCalendar.getInstance().get(GregorianCalendar.YEAR);
-    private static int dia = GregorianCalendar.getInstance().get(GregorianCalendar.DATE);
-    private static int mes = GregorianCalendar.getInstance().get(GregorianCalendar.MONTH);
+    private int ano = GregorianCalendar.getInstance().get(GregorianCalendar.YEAR);
+    private int dia = GregorianCalendar.getInstance().get(GregorianCalendar.DATE);
+    private int mes = GregorianCalendar.getInstance().get(GregorianCalendar.MONTH)+1;
     
-    static void printInvShort() {
-        JOptionPane.showMessageDialog(null,Data.ano + "/" + Data.mes + "/"+ Data.dia);
+    public Data(){
+        ano = 1;
+        dia = 1;
+        mes = 1;
+    }
+
+    public static void printInvShort() {
+        JOptionPane.showMessageDialog(null, ano + "/" + mes + "/"+ dia);
     }
     
-    static void printLong() {
-        JOptionPane.showMessageDialog(null,Data.dia + " de " + (GregorianCalendar.getInstance().getDisplayName(GregorianCalendar.MONTH, GregorianCalendar.LONG, Locale.getDefault())) +" de "+ Data.ano);
+    public static void printLong() {
+        JOptionPane.showMessageDialog(null, dia + " de " + (GregorianCalendar.getInstance().getDisplayName(GregorianCalendar.MONTH, GregorianCalendar.LONG, Locale.getDefault())) +" de "+ ano);
     }
     
-    static void ReadDate() {
+    public static void ReadDate() {
         
         int temp_dia;
         int temp_mes;
