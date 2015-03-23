@@ -1,4 +1,4 @@
 # EXMOPRO
 Exercícios de MOPRO
 
-Não copiem s.f.f.
+Não copiar s.f.f.
