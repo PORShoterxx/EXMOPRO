@@ -43,6 +43,7 @@ public class Data {
     }
     
     public void ReadDate() {
+
         
         int temp_dia;
         int temp_mes;
