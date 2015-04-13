@@ -6,6 +6,7 @@ public class Pessoa {
     private String nome;
     private Data dataNasc = new Data(true);
     private int nif = 0;
+    //UPDATE FFS
     
     public Pessoa(String new_nome, Data dNasc, int n_nif){
         if (n_nif > 999999999 || n_nif < 0) {
