@@ -6,6 +6,7 @@ import java.util.Locale;
 import javax.swing.JOptionPane;
 
 public class Data {
+    
     private int ano = GregorianCalendar.getInstance().get(GregorianCalendar.YEAR);
     private int dia = GregorianCalendar.getInstance().get(GregorianCalendar.DATE);
     private int mes = GregorianCalendar.getInstance().get(GregorianCalendar.MONTH);

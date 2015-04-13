@@ -9,9 +9,11 @@ public class Pessoa {
     
     
     public Pessoa(String new_nome, Data dNasc, int n_nif){
+        
         if (n_nif > 999999999 || n_nif < 0) {
             throw new NumberFormatException("Invalid NIF");
         }
+        
         nome = new_nome;
         dataNasc = dNasc;
         nif = n_nif;
