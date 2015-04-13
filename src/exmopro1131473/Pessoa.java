@@ -35,11 +35,7 @@ public class Pessoa {
     }
     
     public Data getDataNasc(){
-        
         return dataNasc;
-    }
-    
-    public static void DoNothing() {
     }
     
     public void setDataNasc(Data dNasc){
