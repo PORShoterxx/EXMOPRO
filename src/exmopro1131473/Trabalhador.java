@@ -38,9 +38,7 @@ public class Trabalhador extends Pessoa {
             irs = new_irs;
     }
     
-    public float calcularSalario(){
-        return salario*irs;
-    }
+    //public abstract float calcularSalario();
     
     public float GetSalario(){
         return salario;
